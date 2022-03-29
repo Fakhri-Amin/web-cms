@@ -29,33 +29,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>visi misi</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nisi suscipit veritatis culpa commodi error.</td>
-                        <td>
-                            <a class="btn btn-success btn-sm" href="/admin/menu/profil/ubah">ubah</a>
-                            <a class="btn btn-danger btn-sm" href="#">hapus</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>tujuan dan sasaran</td>
-                        <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, voluptate quisquam? Sunt aliquid veniam magni vitae ratione obcaecati asperiores recusandae?</td>
-                        <td>
-                            <a class="btn btn-success btn-sm" href="edit-profil.html">ubah</a>
-                            <a class="btn btn-danger btn-sm" href="#">hapus</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>resolusi</td>
-                        <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos fugiat labore inventore? Magnam.</td>
-                        <td>
-                            <a class="btn btn-success btn-sm" href="edit-profil.html">ubah</a>
-                            <a class="btn btn-danger btn-sm" href="#">hapus</a>
-                        </td>
-                    </tr>
+                    <?php foreach ($dataProfile as $p) : ?>
+                        <tr>
+                            <td><?= $p['id_profile']; ?></td>
+                            <td><?= $p['name']; ?></td>
+                            <td><?= $p['content']; ?></td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/admin/menu/profil/ubah">ubah</a>
+                                <a class="btn btn-danger btn-sm" href="#">hapus</a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
                 </tbody>
             </table>
         </div>
