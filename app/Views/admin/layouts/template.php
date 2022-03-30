@@ -16,12 +16,12 @@
 <body class="sb-nav-fixed">
 
     <!-- top nav -->
-    <?= $this->include('layouts/navbar'); ?>
+    <?= $this->include('admin/layouts/navbar'); ?>
 
     <div id="layoutSidenav">
 
         <!-- left side nav -->
-        <?= $this->include('layouts/side-nav'); ?>
+        <?= $this->include('admin/layouts/side-nav'); ?>
 
         <div id="layoutSidenav_content">
             <main>
@@ -32,8 +32,7 @@
             </main>
 
             <!-- footer -->
-            <?= $this->include('layouts/footer'); ?>
-
+            <?= $this->include('admin/layouts/footer'); ?>
         </div>
     </div>
 

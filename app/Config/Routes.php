@@ -44,6 +44,7 @@ $routes->get('/admin/menu/postingan', 'Menu::postingan');
 
 $routes->get('/login', 'Admin::login');
 
+$routes->get('/user', 'User::index');
 
 /*
  * --------------------------------------------------------------------

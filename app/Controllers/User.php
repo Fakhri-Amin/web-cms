@@ -2,19 +2,19 @@
 
 namespace App\Controllers;
 
-class Admin extends BaseController
+class User extends BaseController
 {
     public function index()
     {
         // return view('welcome_message');
         // echo "halaman admin";
-        return view('admin/pages/index');
+        return view('user/template');
     }
 
     public function login()
     {
         // return view('welcome_message');
         // echo "halaman admin";
-        return view('admin/pages/login');
+        return view('user/login');
     }
 }
